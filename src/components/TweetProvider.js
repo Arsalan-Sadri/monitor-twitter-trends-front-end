@@ -9,7 +9,9 @@ export function TweetProvider(props) {
   const fetchTweets = (searchTerm) => {
     const ENDPOINT_URL = `${BASE_ENDPOINT}/v1/tweets/search/recent?query=${searchTerm}`;
 
-    fetch(ENDPOINT_URL)
+    fetch(ENDPOINT_URL, {
+      mode: 'no-cors',
+    })
       .then((response) => response.json())
       .then((tweets) => {
         setTweets(tweets);
