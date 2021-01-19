@@ -6,6 +6,7 @@ import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 
 import words from './words.js';
+console.log(words);
 
 const resizeStyle = {
   display: 'flex',
@@ -14,7 +15,7 @@ const resizeStyle = {
   border: 'solid 1px #ddd',
   background: '#f0f0f0',
 };
-
+const size = [800, 600];
 function WordCloud() {
   return (
     <>
