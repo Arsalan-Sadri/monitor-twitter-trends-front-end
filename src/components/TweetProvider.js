@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export const TweetContext = React.createContext();
 
-export function TweetProvider() {
+export function TweetProvider(props) {
   const [tweetsState, setTweets] = useState([]);
 
   const fetchTweets = (searchTerm) => {

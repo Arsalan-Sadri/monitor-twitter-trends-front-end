@@ -9,7 +9,19 @@ function Form() {
   const contextVal = useContext(TweetContext);
 
   const [searchTermState, setSearchTerm] = useState('');
-  
+
+  const inputChangeHandler = (ev) => {
+    setSearchTerm(ev.target.value);
+  };
+
+  const handleFormSubmit = (ev) => {
+    ev.preventDefault();
+
+    setSearchTerm('');
+    console.log(searchTermState);
+    // contextVal.fetchTweeets(searchTermState);
+  };
+
   return (
     <form>
       <Grid container direction='column' spacing={3}>
@@ -19,6 +31,9 @@ function Form() {
             label='Search term'
             variant='outlined'
             fullWidth
+            name='searchTermState'
+            value={searchTermState}
+            onChange={(ev) => inputChangeHandler(ev)}
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -26,8 +41,7 @@ function Form() {
             variant='contained'
             color='primary'
             type='button'
-            // onClick={(ev) => this.handleFormSubmit(ev)}
-            // disabled={!this.state.isFormValid}
+            onClick={(ev) => handleFormSubmit(ev)}
           >
             Search
           </Button>
