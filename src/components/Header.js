@@ -7,11 +7,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.info.main,
     color: theme.palette.grey[200],
     padding: theme.spacing(2),
-
-    // lineHeight: '15vw'
   },
   span: {
     fontSize: '4rem',
+    lineHeight: '8vw',
   },
 }));
 
