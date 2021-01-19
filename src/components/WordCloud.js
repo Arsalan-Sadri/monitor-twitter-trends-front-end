@@ -23,20 +23,23 @@ function WordCloud() {
     words = getCounts(tweets.reduce((acc, curr) => acc + ' ' + curr.text, ''));
   }
 
-  return 1;
-  // <>
-  //   <Resizable
-  //     defaultSize={{
-  //       width: '100%',
-  //       height: 300,
-  //     }}
-  //     style={resizeStyle}
-  //   >
-  //     <div style={{ width: '100%', height: '100%' }}>
-  //       <ReactWordcloud words={words} />
-  //     </div>
-  //   </Resizable>
-  // </>
+  return tweets.length === 0 ? (
+    true
+  ) : (
+    <>
+      <Resizable
+        defaultSize={{
+          width: '100%',
+          height: 300,
+        }}
+        style={resizeStyle}
+      >
+        <div style={{ width: '100%', height: '100%' }}>
+          <ReactWordcloud words={words} />
+        </div>
+      </Resizable>
+    </>
+  );
 }
 
 export default WordCloud;
