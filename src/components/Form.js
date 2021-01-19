@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import { TweetContext } from './TweetProvider.js';
 
 function Form() {
+  const contextVal = useContext(TweetContext);
+
+  const [searchTermState, setSearchTerm] = useState('');
+  
   return (
     <form>
       <Grid container direction='column' spacing={3}>
