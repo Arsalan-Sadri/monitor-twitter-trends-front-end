@@ -18,8 +18,7 @@ function Form() {
     ev.preventDefault();
 
     setSearchTerm('');
-    console.log(searchTermState);
-    // contextVal.fetchTweeets(searchTermState);
+    contextVal.fetchTweets(searchTermState);
   };
 
   return (

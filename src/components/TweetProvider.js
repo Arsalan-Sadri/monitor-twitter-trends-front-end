@@ -11,8 +11,8 @@ export function TweetProvider(props) {
 
     fetch(ENDPOINT_URL)
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+      .then((tweets) => {
+        setTweets(tweets);
       })
       .catch((err) => console.log(err));
   };
