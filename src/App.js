@@ -6,6 +6,7 @@ import { Container } from '@material-ui/core';
 import Header from './components/Header.js';
 import Form from './components/Form.js';
 import { TweetProvider } from './components/TweetProvider.js';
+import WordCloud from './components/WordCloud.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +35,8 @@ function App() {
                 <Form />
               </Grid>
               <Grid item xs={12} sm={8}>
-                <Paper className={classes.paper}>DATA</Paper>
+                {/* <Paper className={classes.paper}>DATA</Paper> */}
+                <WordCloud />
               </Grid>
             </TweetProvider>
           </Grid>
