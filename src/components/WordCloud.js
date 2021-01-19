@@ -17,11 +17,10 @@ const resizeStyle = {
 
 function WordCloud() {
   return (
-    <div>
-      <p>Resize the container!</p>
+    <>
       <Resizable
         defaultSize={{
-          width: 600,
+          width: '100%',
           height: 300,
         }}
         style={resizeStyle}
@@ -30,7 +29,7 @@ function WordCloud() {
           <ReactWordcloud words={words} />
         </div>
       </Resizable>
-    </div>
+    </>
   );
 }
 
