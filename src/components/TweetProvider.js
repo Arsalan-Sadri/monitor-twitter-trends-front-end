@@ -7,7 +7,7 @@ export function TweetProvider(props) {
   const [tweetsState, setTweets] = useState([]);
 
   const fetchTweets = (searchTerm) => {
-    const ENDPOINT_URL = `${BASE_ENDPOINT}?query=${searchTerm}`;
+    const ENDPOINT_URL = `${BASE_ENDPOINT}/v1/tweets/search/recent?query=${searchTerm}`;
 
     fetch(ENDPOINT_URL)
       .then((response) => response.json())
