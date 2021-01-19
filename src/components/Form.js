@@ -10,7 +10,7 @@ function Form() {
 
   const [searchTermState, setSearchTerm] = useState('');
 
-  const inputChangeHandler = (ev) => {
+  const inputChangeHandler = (ev) => { 
     setSearchTerm(ev.target.value);
   };
 
