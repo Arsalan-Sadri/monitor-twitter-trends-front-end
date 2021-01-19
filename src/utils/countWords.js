@@ -60,7 +60,17 @@ const STOPWORDS = [
   'co',
   'it',
   'new',
-  'vaccine'
+  'vaccine',
+  'but',
+  'how',
+  'got',
+  'who',
+  'all',
+  'are',
+  'fomr',
+  'not',
+  'yes',
+  'no',
 ];
 
 export default function getCounts(str) {
