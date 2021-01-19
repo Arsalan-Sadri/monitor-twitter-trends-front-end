@@ -59,6 +59,7 @@ const STOPWORDS = [
   't',
   'co',
   'it',
+  'new',
 ];
 
 export default function getCounts(str) {
