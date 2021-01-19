@@ -35,7 +35,6 @@ function App() {
                 <Form />
               </Grid>
               <Grid item xs={12} sm={8}>
-                {/* <Paper className={classes.paper}>DATA</Paper> */}
                 <WordCloud />
               </Grid>
             </TweetProvider>
