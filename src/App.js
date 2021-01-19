@@ -26,10 +26,15 @@ function App() {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
-              <Paper className={classes.paper}>test</Paper>
+              <Paper className={classes.paper}></Paper>
             </Grid>
             <Grid item xs={9} sm={4}>
-              <TextField id='outlined-basic' label='Outlined' variant='outlined' />
+              <TextField
+                id='outlined-basic'
+                label='Search term'
+                variant='outlined'
+                fullWidth
+              />
             </Grid>
             <Grid item xs={3} sm={2}>
               <Paper className={classes.paper}>xs=6 sm=3</Paper>
