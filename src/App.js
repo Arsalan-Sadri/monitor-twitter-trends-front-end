@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Container } from '@material-ui/core';
 import Header from './components/Header.js';
-import TextField from '@material-ui/core/TextField';
+import Form from './components/Form.js';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,18 +28,9 @@ function App() {
             <Grid item xs={12}>
               <Paper className={classes.paper}></Paper>
             </Grid>
-            <Grid item xs={9} sm={4}>
-              <TextField
-                id='outlined-basic'
-                label='Search term'
-                variant='outlined'
-                fullWidth
-              />
+            <Grid item xs={12} sm={6}>
+              <Form />
             </Grid>
-            <Grid item xs={3} sm={2}>
-              <Paper className={classes.paper}>xs=6 sm=3</Paper>
-            </Grid>
-
             <Grid item xs={12} sm={6}>
               <Paper className={classes.paper}>xs=12 sm=6</Paper>
             </Grid>
