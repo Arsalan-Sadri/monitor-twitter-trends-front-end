@@ -8,9 +8,10 @@ export function TweetProvider(props) {
   const [tweetsState, setTweets] = useState([]);
 
   useEffect(() => {
-    
+
     (async function run() {
       const tweets = await api.matchAllTweets();
+      console.log(tweets);
       setTweets(tweets);
     })();
   }, []);
