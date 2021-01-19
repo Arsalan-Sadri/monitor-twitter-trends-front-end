@@ -67,7 +67,7 @@ export default function getCounts(str) {
 
   const words = [];
 
-  for (const [text, value] of Object.entries(countMap)) {
+  for (let [text, value] of Object.entries(countMap)) {
     if (!STOPWORDS.includes(text)) {
       words.push({
         text,

@@ -18,10 +18,7 @@ const resizeStyle = {
 function WordCloud() {
   const { tweetsState: tweets } = useContext(TweetContext);
 
-  let words = [];
-  if (tweets.length !== 0) {
-    words = getCounts(tweets.reduce((acc, curr) => acc + ' ' + curr.text, ''));
-  }
+  const words = getCounts(tweets.reduce((acc, curr) => acc + ' ' + curr.text, ''));
 
   return tweets.length === 0 ? (
     true
@@ -30,7 +27,7 @@ function WordCloud() {
       <Resizable
         defaultSize={{
           width: '100%',
-          height: 300,
+          height: 400,
         }}
         style={resizeStyle}
       >
