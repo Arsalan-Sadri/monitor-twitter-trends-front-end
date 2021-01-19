@@ -3,6 +3,8 @@ import countWords from 'count-words';
 const STOPWORDS = [
   'this',
   'that',
+  'these',
+  'those',
   'a',
   'an',
   'the',
@@ -45,6 +47,18 @@ const STOPWORDS = [
   'be',
   's',
   'as',
+  'them',
+  'me',
+  'my',
+  'about',
+  'https',
+  'http',
+  'get',
+  'there',
+  'rt',
+  't',
+  'co',
+  'it',
 ];
 
 export default function getCounts(str) {
