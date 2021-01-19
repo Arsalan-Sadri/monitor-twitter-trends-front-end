@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BASE_ENDPOINT } from '../config.js';
 
 export const TweetContext = React.createContext();
 
@@ -6,7 +7,6 @@ export function TweetProvider(props) {
   const [tweetsState, setTweets] = useState([]);
 
   const fetchTweets = (searchTerm) => {
-    const BASE_ENDPOINT = 'http://localhost:5000/v1/tweets/search/recent';
     const ENDPOINT_URL = `${BASE_ENDPOINT}?query=${searchTerm}`;
 
     fetch(ENDPOINT_URL)
