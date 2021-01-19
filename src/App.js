@@ -31,10 +31,10 @@ function App() {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <TweetProvider>
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} md={4}>
                 <Form />
               </Grid>
-              <Grid item xs={12} sm={8}>
+              <Grid item xs={12} md={8}>
                 <WordCloud />
               </Grid>
             </TweetProvider>
