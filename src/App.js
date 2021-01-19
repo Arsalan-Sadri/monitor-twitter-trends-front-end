@@ -24,10 +24,10 @@ function App() {
           <Grid item xs={12}>
             <Paper className={classes.paper}>xs=12</Paper>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={9} sm={4}>
             <Paper className={classes.paper}>xs=6 sm=3</Paper>
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={3} sm={2}>
             <Paper className={classes.paper}>xs=6 sm=3</Paper>
           </Grid>
 
